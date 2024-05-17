@@ -1,8 +1,9 @@
-import style from './page.module.css'
+import './page.css';
+import Navbar from "./navbar/page";
+
 export default function Home() {
   return (
-    <main className={style.main}>
-      <h1 className={style.heading}>Hello From Next App</h1>
-    </main>
+    <>
+    </>
   );
 }

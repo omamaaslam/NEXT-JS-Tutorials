@@ -1,0 +1,35 @@
+nav {
+    height: 60px;
+    width: 100%;
+    padding: 10px 13px;
+    box-shadow: 0 0 0 3px rgb(231, 230, 233);
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    list-style-type: none;
+}
+
+nav .logo {
+    color: blueviolet;
+    font-size: 27px;
+    font-weight: 600;
+    margin-top: -10px;
+}
+
+nav ul li {
+    padding: 10px 11px;
+}
+
+nav ul li a {
+    text-decoration: none;
+
+}
+
+nav .nav-link:hover {
+    border-bottom: 1px solid blueviolet;
+    font-size: 15px;
+}
