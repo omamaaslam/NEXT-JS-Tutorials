@@ -68,30 +68,31 @@ const Product = () => {
         }
     ]
     return (
-        <>
-            {productList.map((product: any) => {
-                return (
-                    <Container key={product.id}>
-                        <Row className='mt-4 mb-4 py-4'>
-                            <Col className='col-lg-3 col-md-4 col-sm-6'>
-                                <Card>
-                                    <small>{product.category}</small>
-                                    <Card.Body>
-                                        <Card.Title>{product.name}</Card.Title>
-                                        <p>
-                                            {product.description}
-                                        </p>
-                                        <Link href={`/product/${product.id}`}>
-                                            <a>View Details</a>
-                                        </Link>
-                                    </Card.Body>
-                                </Card>
-                            </Col>
-                        </Row>
-                    </Container>
-                );
-            })}
-        </>
+        <div className="container">
+            <div className="row mt-4 mb-4 py-4">
+                {
+                    productList.map((product: any) => {
+                        return (
+                            <div className="col-lg-3 col-md-4 col-6">
+                                <div className="card mb-3">
+                                    <div className="card-header">
+                                        <div className="card-title text-primary">
+                                            <h4>{product.name}</h4></div>
+                                        <small>{product.category}</small>
+                                    </div>
+                                    <div className="card-body">
+                                        {product.description}
+                                    </div>
+                                    <div className="card-footer">
+                                        <Link href={`/product/${product.id}`}>View Details</Link>
+                                    </div>
+                                </div>
+                            </div>
+                        );
+                    })
+                }
+            </div>
+        </div>
         // <Container>
         //     <Row className='mt-4 mb-4 py-4'>
         //         <Col>
